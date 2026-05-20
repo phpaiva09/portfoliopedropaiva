@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #220052, #021751 45%, #000 100%);
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe15c;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.image img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffe15c;
+    box-shadow: 0 0 25px rgba(255, 225, 92, 0.35);
+    background-color: #ffff;
+}
+
+h1 {
+    color: #ffe15c;
+    font-size: 46px;
+    margin-top: 18px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #dcdcdc;
+    margin-top: 8px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 45px auto;
+}
+
+.sobre_mim {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+
+.sobre_mim h3 {
+    color: #ffe15c;
+    font-size: 25px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.sobre_mim h3:first-child {
+    margin-top: 0;
+}
+
+.sobre_mim p {
+    color: #e6e6e6;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 30px 0;
+}
+
+footer a {
+    text-align: center;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    transform: translateY(-5px);
+    color: #ffe15c;
+}
+
+footer img {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    ul {
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .sobre_mim {
+        padding: 25px;
+    }
+
+    .sobre_mim p {
+        font-size: 16px;
+    }
+}
