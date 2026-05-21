@@ -130,6 +130,14 @@ strong {
     font-weight: 700;
 }
 
+.link {
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: #ffe15c;
+}
+
 @media (max-width: 700px) {
     ul {
         gap: 25px;
